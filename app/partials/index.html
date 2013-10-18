@@ -1,1 +1,7 @@
-<ng-include src="'partials/feed.html'"></ng-include>
+<div ng-controller="FeedCtrl">
+	<div class="row" ng-include="'partials/request-a-q.html'"></div>
+
+	<section ng-repeat="question in questions | orderBy:'points':true">
+		<div class="row" ng-include="'partials/question-sum-view.html'"></div>
+	</section>
+</div>
