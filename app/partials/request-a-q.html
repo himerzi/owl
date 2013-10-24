@@ -3,10 +3,9 @@
 		<form class="form-inline" role="form">
 		  <div class="form-group">
 		    <div class="input-group">
-		    <label class="sr-only" for="exampleInputEmail2">Post a question</label>
-			    <input type="text" class="form-control" ng-model="newQText" placeholder="Enter a question">
+			    <input type="text" class="form-control" ng-model="newQText" placeholder="Enter a question (don't worry, it's anonymous)">
 		      <span class="input-group-btn">
-		        <button class="btn btn-default" type="button" ng-click="addQuestion(newQText)">OK!</button>
+		        <button class="btn btn-default" type="submit" ng-click="addQuestion(newQText)">OK!</button>
 		      </span>
 		    </div><!-- /input-group -->
 		  </div>

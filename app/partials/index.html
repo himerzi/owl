@@ -1,7 +1,6 @@
-<div ng-controller="FeedCtrl">
+<div ng-controller="FeedCtrl" class="feed-section">
 	<div class="row" ng-include="'partials/request-a-q.html'"></div>
 
-	<section ng-repeat="question in questions | orderBy:'points':true">
-		<div class="row" ng-include="'partials/question-sum-view.html'"></div>
-	</section>
+	<div class="row" ng-include="'partials/question-thumb-view.html'" ng-repeat="question in questions | orderBy:'points':true">
+	</div>
 </div>
