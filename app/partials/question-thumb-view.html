@@ -1,0 +1,23 @@
+<div ng-controller="QSumCtrl" class="col-xs-12">
+	<div class="row">
+		<div class="col-xs-1">
+			<button type="button" ng-click="upVote()" title="This question is useful" class="btn btn-default">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</button>
+
+		</div>
+
+		<div class="col-xs-1">
+			<p class="text-center" ng-bind="question.points">32</p>
+		</div>
+
+		<div class="col-xs-10">
+
+				<p>
+					<a ng-href="#/q/{{question.id}}">{{question.question}}</a> <small><span class="text-muted">Answer by: {{question.author}}</span></small>
+				</p>
+
+		</div>
+
+	</div>
+</div>
